@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="30dp">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/login_button"
+            android:background="@drawable/google"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_generic"
+            android:text="@string/title"
+            android:textSize="45sp"
+            android:textAllCaps="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/secrets_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/title"
+            android:layout_above="@id/publish"
+            android:layout_centerHorizontal="true">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/secrets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <Button
+        android:id="@+id/publish"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/third_alt"
+        android:contentDescription="@string/publish"
+        android:text="@string/publish"
+        android:textAlignment="center"
+        android:textColor="@color/contrast"
+        android:textSize="50sp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="displayCreate" />
+</RelativeLayout>

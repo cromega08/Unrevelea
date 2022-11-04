@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MTIC</string>
+    <string-array name="notification_data">
+        <item>secrets_app_channel</item>
+        <item>Secrets App Channel</item>
+        <item>A Notification Channel for the Secrets App</item>
+        <item>You posted a secret with title: %s</item>
+        <item>New user created with id: %07d</item>
+        <item>Error creating new user in database</item>
+    </string-array>
+    <string name="title">Secrets</string>
+    <string name="publish">+</string>
+    <string name="create_user">You</string>
+    <string name="create_title">Title</string>
+    <string name="create_secret">Secret</string>
+    <string name="create_button">Publish</string>
+    <string name="login_button">Button to Log in Google Account</string>
+</resources>
